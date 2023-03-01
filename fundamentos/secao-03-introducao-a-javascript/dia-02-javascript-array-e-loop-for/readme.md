@@ -31,10 +31,9 @@ O fatorial é a multiplicação de um número natural pelos seus antecessores, e
 `O fatorial é representado pelo sinal !
 4! = 4 x 3 x 2 x 1 = 24;`
 ```
+10. Com base nessas informações, crie um algoritmo que imprima na tela o fatorial de 10.
 
-Com base nessas informações, crie um algoritmo que imprima na tela o fatorial de 10.
-
-Utilize a estrutura de repetição for para desenvolver um algoritmo que seja capaz de inverter uma palavra, como a palavra “banana” para “ananab”. Utilize a string abaixo como exemplo. Depois, troque-a por outras para verificar se seu algoritmo está funcionando corretamente.
+11. Utilize a estrutura de repetição for para desenvolver um algoritmo que seja capaz de inverter uma palavra, como a palavra “banana” para “ananab”. Utilize a string abaixo como exemplo. Depois, troque-a por outras para verificar se seu algoritmo está funcionando corretamente.
 
 ```javascript
 let word = 'tryber';
@@ -44,4 +43,28 @@ let word = 'tryber';
 let array = ['java', 'javascript', 'python', 'html', 'css'];
 ```
 
-Utilize a estrutura de repetição for para escrever dois algoritmos: um que imprima no console a maior palavra desse array e outro que imprima a menor. Considere o número de caracteres de cada palavra.
+12. Utilize a estrutura de repetição for para escrever dois algoritmos: um que imprima no console a maior palavra desse array e outro que imprima a menor. Considere o número de caracteres de cada palavra.
+
+## Bônus
+
+Para os próximos dois exercícios [leia este artigo](http://devfuria.com.br/logica-de-programacao/introducao-ao-algoritmo-de-ordenacao-bubble-sort/) e tente entender o que está acontencedo no código abaixo:
+
+```
+for (let i = 1; i < array.length; i++) {
+  for (let j = 0; j < i; j++) {
+    if (array[i] < array[j]) {
+      let position = array[i];
+      array[i] = array[j];
+      array[j] = position;
+    }
+  }
+}
+```
+
+1. Ordene o array numbers em ordem crescente e imprima seus valores;
+
+2. Ordene o array numbers em ordem decrescente e imprima seus valores;
+
+3. Agora você irá criar um novo array a partir do array numbers, sem perdê-lo. Cada valor do novo array deverá ser igual ao valor correspondente no array numbers multiplicado pelo seguinte. Por exemplo: o primeiro valor do novo array deverá ser 45, pois é a multiplicação de 5 (primeiro valor) e 9 (valor seguinte). Já o segundo valor do novo array deverá ser 27, pois é a multiplicação de 9 (segundo valor) e 3 (valor seguinte), e assim por diante. Caso não haja próximo valor, a multiplicação deverá ser feita por 2. Faça isso utilizando o for e o método push. O resultado deve ser o array abaixo:
+
+`[45, 27, 57, 1330, 560, 800, 200, 70, 945, 54]`
