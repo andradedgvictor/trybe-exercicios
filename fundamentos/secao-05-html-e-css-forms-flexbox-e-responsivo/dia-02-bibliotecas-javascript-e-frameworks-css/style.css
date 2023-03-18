@@ -1,0 +1,36 @@
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  header {
+    top: 0;
+    background-color: green;
+  }
+  
+  
+#title {
+    text-align: center;
+    color: white;
+    padding: 10px 0px;
+}
+
+.why-area {
+    margin: 20px 0px
+}
+
+.date-area {
+    margin-bottom: 20px;
+}
+
+.agreement-area {
+    margin-bottom: 20px;
+}
+
+.btn-group button {
+  display: flex;
+  margin-right: 20px;
+}
+
+  
