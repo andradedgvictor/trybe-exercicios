@@ -6,4 +6,4 @@ function myFizzBuzz(num) {
     return num;
   }
   
-module.exports = myRemove;
+module.exports = myFizzBuzz;
