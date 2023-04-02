@@ -45,4 +45,4 @@ const fruits = (basket) => {
 };
   
 
-console.log(fruits(['Melancia', 'Abacate', 'Melancia', 'Melancia', 'Uva']))
+console.log(fruits(basket))
