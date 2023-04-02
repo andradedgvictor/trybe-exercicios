@@ -29,8 +29,20 @@ const fruits = (basket) => {
     }
   }
 
+  const arrayBasket = []
+
+  for (const key in fruitCounts) {
+    if (fruitCounts[key] > 1) {
+      arrayBasket.push(` ${fruitCounts[key]} ${key}s`)
+    } else if (fruitCounts[key] === 1) {
+      arrayBasket.push(` ${fruitCounts[key]} ${key}`)
+    }
+  }
+
+  console.log(`Sua cesta possui:${arrayBasket}`)
+
   return fruitCounts;
 };
   
 
-console.log(fruits(basket))
+console.log(fruits(['Melancia', 'Abacate', 'Melancia', 'Melancia', 'Uva']))
