@@ -95,6 +95,40 @@ const verifyPair = (object, key, value) => {
     return trueOrFalse;
 }
 
-console.log(verifyPair(lesson3, 'turno', 'noite'));
-console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
+// Com o uso do objeto (allLessons) obtido nos exercícios anteriores, crie uma função para contar o número de estudantes que assistiram às aulas de Matemática.
 
+const studentsPresent = (allLessons, matter) => {
+  let countStudants = 0;
+
+  for (const key in allLessons) {
+    if (matter === allLessons[key].materia) {
+      countStudants += allLessons[key].numeroEstudantes
+    }
+  }
+
+  return `${countStudants} estudantes assistiram as aulas de matemática.`
+};
+
+// Com o uso do objeto (allLessons) obtido nos exercícios anteriores, crie uma função que retorne um objeto que represente o relatório da pessoa instrutora, as aulas ministradas e o número total de estudantes.
+
+const createReport = (allLessons, name) => {
+  const listLessons = allLessons
+  let professor = '';
+  let aulas = [];
+  let estudantes = 0;
+  const object = {};
+
+  for (const key in listLessons) {
+    if (listLessons[key].professor === name) {
+      professor = name;
+      aulas.push(listLessons[key].materia);
+      estudantes += listLessons[key].numeroEstudantes;
+    }  
+  }
+
+  object.professor = professor;
+  object.aulas = aulas;
+  object.estudantes = estudantes;
+
+  return object;
+};
