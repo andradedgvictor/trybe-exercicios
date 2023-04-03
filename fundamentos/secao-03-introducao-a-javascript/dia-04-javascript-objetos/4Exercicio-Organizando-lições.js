@@ -60,6 +60,7 @@ const allLessons = () => {
 };
 
 allLessons();
+console.log(allLessons());
 
 // Com base no objeto elaborado no tópico anterior, crie uma função que retorne o número total de estudantes em todas as aulas.
 
@@ -132,3 +133,5 @@ const createReport = (allLessons, name) => {
 
   return object;
 };
+
+console.log(createReport(allLessons(), 'Maria Clara'));
