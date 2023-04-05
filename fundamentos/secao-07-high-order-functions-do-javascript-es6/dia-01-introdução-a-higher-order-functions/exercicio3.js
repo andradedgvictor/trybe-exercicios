@@ -18,5 +18,3 @@ const checker = (rightAnswers, studentAnswers) => {
 };
 
 const checkAnswers = (rightAnswers, studentAnswers, callback) => `Resultado final: ${callback} pontos`;
-
-console.log(checkAnswers(RIGHT_ANSWERS, STUDENT_ANSWERS, checker(RIGHT_ANSWERS, STUDENT_ANSWERS)))

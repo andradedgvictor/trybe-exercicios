@@ -67,5 +67,3 @@ const authorBornIn1947 = () => {
 
   return result.author.name;
 }
-
-console.log(authorBornIn1947())

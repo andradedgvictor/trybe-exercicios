@@ -7,5 +7,3 @@ const lotteryNumber = (myNumber, callback) => {
 
     return resultLottery(myNumber, number) ? 'Parabéns, você ganhou' : 'Tente novamente';
 };
-
-console.log(lotteryNumber(3, resultLottery));

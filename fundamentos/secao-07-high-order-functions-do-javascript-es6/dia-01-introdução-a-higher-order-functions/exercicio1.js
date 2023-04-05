@@ -17,5 +17,3 @@ const newEmployees = (email) => {
 
   return employees;
 };
-
-console.log(newEmployees(emailGenerator))
