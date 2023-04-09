@@ -6,6 +6,7 @@
     <title>Formulario-TrybeTrip</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
   </head>
   <body>
     <h1 id="title">Formulário Trybe Travel</h1>
@@ -57,7 +58,7 @@
 
         <div class="container-date">
             <label for="date">Qual a melhor data para realizar sua viagem?</label>
-          <input type="date" id="date">
+          <input type="text" id="date">
         </div>
 
         <div class="container-checks">
@@ -86,4 +87,14 @@
   </body>
 
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <script>
+      var picker = new Pikaday({
+          field: document.getElementById('date'),
+          format: 'DD/MM/YYYY',
+          minDate: new Date(),
+          maxDate: new Date(2024, 12, 31),
+          yearRange: [2000, 2024]
+      });
+  </script>
 </html>
