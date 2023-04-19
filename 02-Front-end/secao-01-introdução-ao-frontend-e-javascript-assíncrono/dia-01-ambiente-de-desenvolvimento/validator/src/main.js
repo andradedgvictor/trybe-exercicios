@@ -1,5 +1,10 @@
 import validator from 'validator';
 
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import './style.css';
+
 const inputEmail = document.getElementById('email-input');
 const select = document.getElementById('type');
 const button = document.getElementById('button-validator');
